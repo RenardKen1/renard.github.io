@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f3f4f6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profile img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .profile h2 {
+      font-size: 20px;
+    }
+
+    .profile p.role {
+      color: #6b7280;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+
+    .profile p.desc {
+      font-size: 14px;
+      color: #374151;
+      margin-top: 8px;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #4b5563;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .section-title {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .skills {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .skill {
+      margin-bottom: 15px;
+    }
+
+    .skill-name {
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .bar {
+      height: 6px;
+      background: #e5e7eb;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 100%;
+      background: linear-gradient(to right, #3b82f6, #8b5cf6);
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Profile Card -->
+    <div class="card">
+      <div class="profile">
+        <img src="https://via.placeholder.com/80" alt="Profile">
+        <div>
+          <h2>Renard Ken Hapil</h2>
+          <p class="role">Computer Science Student</p>
+          <p class="desc">
+            Passionate computer science student with a strong foundation in software development and problem-solving.
+            I enjoy building projects that solve real-world problems and continuously expanding my technical skill.
+          </p>
+          <div class="contact">
+            <span>📧 hapilrenard@gmail.com</span>
+            <span>📞 +63 912 345 6789</span>
+            <span>🔗 LinkedIn Profile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Card -->
+    <div class="card">
+      <h3 class="section-title">Technical Skills</h3>
+      <div class="skills">
+
+        <!-- Programming Languages -->
+        <div class="column">
+          <h4>Programming Languages</h4>
+
+          <div class="skill">
+            <div class="skill-name">Python <span>40%</span></div>
+            <div class="bar"><div class="fill" style="width:40%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">JavaScript <span>20%</span></div>
+            <div class="bar"><div class="fill" style="width:20%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Java <span>10%</span></div>
+            <div class="bar"><div class="fill" style="width:10%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">C++ <span>40%</span></div>
+            <div class="bar"><div class="fill" style="width:40%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">SQL <span>30%</span></div>
+            <div class="bar"><div class="fill" style="width:30%"></div></div>
+          </div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="column">
+          <h4>Tools & Technologies</h4>
+
+          <div class="skill">
+            <div class="skill-name">Git/GitHub <span>50%</span></div>
+            <div class="bar"><div class="fill" style="width:50%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">VS Code <span>40%</span></div>
+            <div class="bar"><div class="fill" style="width:40%"></div></div>
+          </div>
+
+          <h4 style="margin-top:15px;">Concepts & Practices</h4>
+
+          <div class="skill">
+            <div class="skill-name">Data Structures <span>40%</span></div>
+            <div class="bar"><div class="fill" style="width:40%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Algorithms <span>35%</span></div>
+            <div class="bar"><div class="fill" style="width:35%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">OOP <span>30%</span></div>
+            <div class="bar"><div class="fill" style="width:30%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-name">Agile/Scrum <span>25%</span></div>
+            <div class="bar"><div class="fill" style="width:25%"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
