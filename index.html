@@ -5,118 +5,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
 
     body {
-      background: #f3f4f6;
-      padding: 20px;
+      background: linear-gradient(135deg, #1f2937, #4f46e5);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #111827;
     }
 
+    .navbar {
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a { color: #fff; text-decoration: none; margin-left: 15px; font-size: 14px; }
+    .navbar a:hover { text-decoration: underline; }
+
     .container {
-      max-width: 900px;
+      flex: 1;
+      width: 100%;
+      max-width: 1100px;
       margin: auto;
+      padding: 20px;
     }
 
     .card {
-      background: #fff;
+      background: #ffffff;
       border-radius: 12px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
-    .profile {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+    .profile { display: flex; align-items: center; gap: 20px; }
 
     .profile img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
+      width: 100px; height: 100px; border-radius: 50%; object-fit: cover;
     }
 
-    .profile h2 {
-      font-size: 20px;
-    }
+    .profile h2 { font-size: 22px; }
 
-    .profile p.role {
-      color: #6b7280;
-      font-size: 14px;
-      margin: 5px 0;
-    }
+    .profile p.role { color: #6b7280; font-size: 14px; margin: 5px 0; }
 
-    .profile p.desc {
-      font-size: 14px;
-      color: #374151;
-      margin-top: 8px;
-    }
+    .profile p.desc { font-size: 14px; color: #374151; margin-top: 8px; }
 
     .contact {
-      margin-top: 10px;
-      font-size: 13px;
-      color: #4b5563;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+      margin-top: 10px; font-size: 13px; color: #4b5563; display: flex; gap: 15px; flex-wrap: wrap;
     }
 
-    .section-title {
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
+    .section-title { font-size: 18px; margin-bottom: 15px; }
 
-    .skills {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
+    .skills { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 
-    .column {
-      flex: 1;
-      min-width: 250px;
-    }
+    .column { flex: 1; min-width: 250px; }
 
-    .skill {
-      margin-bottom: 15px;
-    }
+    .skill { margin-bottom: 15px; }
 
-    .skill-name {
-      font-size: 14px;
-      margin-bottom: 5px;
-      display: flex;
-      justify-content: space-between;
-    }
+    .skill-name { font-size: 14px; margin-bottom: 5px; display: flex; justify-content: space-between; }
 
-    .bar {
-      height: 6px;
-      background: #e5e7eb;
-      border-radius: 6px;
-      overflow: hidden;
-    }
+    .bar { height: 6px; background: #e5e7eb; border-radius: 6px; overflow: hidden; }
 
-    .fill {
-      height: 100%;
-      background: linear-gradient(to right, #3b82f6, #8b5cf6);
-      border-radius: 6px;
-    }
+    .fill { height: 100%; background: linear-gradient(to right, #3b82f6, #8b5cf6); border-radius: 6px; }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <!-- Profile Card -->
+  <!-- Navbar -->
+  <div class="navbar">
+    <div>My Portfolio</div>
+    <div>
+      <a href="#home">Home</a>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <div class="container" id="home">
+
     <div class="card">
       <div class="profile">
-        <img src="https://via.placeholder.com/80" alt="Profile">
+        <img src="https://via.placeholder.com/100" alt="Profile">
         <div>
           <h2>Renard Ken Hapil</h2>
           <p class="role">Computer Science Student</p>
@@ -133,12 +107,10 @@
       </div>
     </div>
 
-    <!-- Skills Card -->
     <div class="card">
       <h3 class="section-title">Technical Skills</h3>
       <div class="skills">
 
-        <!-- Programming Languages -->
         <div class="column">
           <h4>Programming Languages</h4>
 
@@ -168,7 +140,6 @@
           </div>
         </div>
 
-        <!-- Tools & Technologies -->
         <div class="column">
           <h4>Tools & Technologies</h4>
 
@@ -209,5 +180,6 @@
     </div>
 
   </div>
+
 </body>
 </html>
