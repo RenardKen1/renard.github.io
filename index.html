@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Ken — student developer building responsive web projects. Portfolio showcasing projects, skills, and contact information.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#1d4ed8">
 	<title>My Profile Site</title>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="favicon.ico">
 </head>
 <body>
 	<header class="hero">
+		<nav class="top-nav" aria-label="Primary">
+			<div class="nav-inner">
+				<button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+					<span class="hamburger" aria-hidden="true"></span>
+				</button>
+				<ul id="primary-navigation" class="nav-links" data-visible="false">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div class="hero-grid">
 			<div class="hero-copy">
 				<p class="tag">Student Developer Portfolio</p>
@@ -20,6 +34,7 @@
 					<a class="button" href="#contact">Contact Me</a>
 					<button class="button button-secondary" id="hello-button" type="button">Say Hello</button>
 					<button class="button button-secondary" id="profile-toggle" type="button" aria-expanded="true">Hide Profile</button>
+					<a class="button button-secondary" href="Ken_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
 				</div>
 				<div class="hero-stats">
 					<div>
@@ -50,7 +65,7 @@
 		</div>
 	</header>
 
-	<main class="container">
+	<main id="main" class="container">
 		<section class="card" id="about">
 			<h2>About Me</h2>
 			<p>
@@ -157,7 +172,7 @@
 				</div>
 				<div class="contact-item">
 					<span class="contact-label">GitHub</span>
-					<a href="https://github.com/RenardKen1" target="_blank" rel="noreferrer">github.com/RenardKen1</a>
+						<a href="https://github.com/RenardKen1" target="_blank" rel="noreferrer">github.com/RenardKen1</a>
 				</div>
 				<div class="contact-item">
 					<span class="contact-label">LinkedIn</span>
